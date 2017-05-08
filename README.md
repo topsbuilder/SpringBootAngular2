@@ -1,2 +1,2 @@
 # SpringBootAngular2 tutorial
-spring boot
+spring boot v1
