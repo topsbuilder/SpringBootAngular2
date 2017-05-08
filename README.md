@@ -1,1 +1,1 @@
-# SpringBootAngular2
+# SpringBootAngular2 tutorial
