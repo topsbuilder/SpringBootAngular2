@@ -22,8 +22,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		
-		<!-- <start-class>ca.mitx.SpringBootAngular2Application</start-class> -->
 	</properties>
 
 	<dependencies>
@@ -66,15 +64,28 @@
 		    <artifactId>jasypt-spring-boot-starter</artifactId>
 		    <version>1.2</version>
 		</dependency> -->	
-<!-- 	    <dependency>
+ 	    <dependency>
 	      <groupId>javax.servlet</groupId>
 	      <artifactId>javax.servlet-api</artifactId>
 	      <scope>provided</scope>
-	    </dependency> -->
+	    </dependency> 
 			
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- added for jboss eap6.4 spring boot integration -->
+			<!--
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+			</exclusions>
+			-->						
 		</dependency>
 
 		<dependency>
